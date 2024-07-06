@@ -17,6 +17,8 @@ def draw_line_plot():
     # Draw line plot
 
     fig, ax = plt.subplots()
+    fig.set_figwidth(15)
+    fig.set_figheight(5)
     ax.plot(df.index, df['value'], color='red', label='value')
     ax.set_xlabel('Date')
     ax.set_ylabel('Page Views')
